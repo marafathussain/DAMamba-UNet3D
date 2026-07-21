@@ -1,0 +1,33 @@
+# Example model settings (YAML is optional; models can be constructed in Python directly)
+
+model:
+  name: DAMambaUNet3D
+  in_channels: 4
+  out_channels: 4
+  base_width: 16
+  use_damamba_in: ["E2", "E3", "E4"]
+  decoder_damamba: false
+  bottleneck_depth: 1
+  norm: group
+  damamba:
+    scan_mode: das
+    d_state: 16
+    d_conv: 4
+    expand: 2
+    dropout: 0.0
+
+# Large variant (DAMamba-L)
+damamba_large:
+  stage_widths: [48, 96, 192, 384]
+  bottleneck_width: 768
+  stage_depths: [2, 2, 2, 2]
+  bottleneck_depth: 0
+  bottleneck_conv_depth: 1
+  decoder_damamba_depths: [0, 0, 0]
+  damamba:
+    scan_mode: das
+    d_state: 16
+    d_conv: 4
+    expand: 4
+    dropout: 0.0
+    head_dim: 16

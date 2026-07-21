@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "damamba-unet3d"
+version = "0.1.0"
+description = "DAMamba-UNet3D: tri-plane Dynamic Adaptive Scan for 3D medical image segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "torch",
+  "einops",
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = ["pyyaml"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["damamba_unet3d*"]
+
+[project.urls]
+Homepage = "https://github.com/marafathussain/DAMamba-UNet3D"
+Paper = "https://arxiv.org/abs/XXXX.XXXXX"

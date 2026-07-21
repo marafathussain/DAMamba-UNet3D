@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+*.egg
+.env
+.venv/
+venv/
+logs/
+third_party/damamba/
+*.pt
+*.pth
+.DS_Store
