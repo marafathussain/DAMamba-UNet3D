@@ -2,7 +2,7 @@
 
 PyTorch implementation of **DAMamba-UNet3D**, a hybrid 3D U-Net with **Dynamic Adaptive Scan (DAS)** extended to tri-plane volumetric selective scan. DAS learns input-dependent voxel ordering before Mamba state-space mixing; convolutions handle local detail elsewhere.
 
-Paper: [DAMamba-UNet3D (arXiv)](https://arxiv.org/abs/XXXX.XXXXX) — update link after submission.
+Paper: [DAMamba-UNet3D (arXiv)](https://arxiv.org/abs/2607.22718)
 
 ## Models
 
@@ -100,8 +100,8 @@ If you use this code, please cite our paper (update arXiv ID in `CITATION.bib` a
 ```bibtex
 @article{damamba_unet3d2026,
   title   = {{DAMamba-UNet3D}: A Parameter-Efficient Mamba State Space {U-Net} with Dynamic Adaptive Scan for {3D} Medical Image Segmentation},
-  author  = {Author, First and Author, Second and Author, Third},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  author  = {Hussain, Mohammad Arafat and Grant, Ellen and Ou, Yangming},
+  journal = {arXiv preprint arXiv:2607.22718},
   year    = {2026}
 }
 ```
