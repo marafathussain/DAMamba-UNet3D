@@ -95,7 +95,7 @@ CITATION.bib              # BibTeX for this work
 
 ## Citation
 
-If you use this code, please cite our paper (update arXiv ID in `CITATION.bib` after submission):
+If you use this code, please cite our paper:
 
 ```bibtex
 @article{damamba_unet3d2026,
